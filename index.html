@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snelleeg.nl – Ontruimen met gevoel</title>
+  <meta name="description" content="Woningontruiming met gevoel en zorg. Snel beschikbaar, duurzaam en persoonlijk. Haarlem en omgeving. Gratis offerte op locatie.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- TOPBALK -->
+<div class="topbar">
+  <span>📍 Haarlem &amp; regio</span>
+  <span>KvK Amsterdam 98927744</span>
+  <a href="tel:+31659110607">☎ +31 6 5911 0607</a>
+</div>
+
+<!-- NAVIGATIE -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="logo-main">Snelleeg</span><span class="logo-dot">.nl</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
+      <li><a href="#waarom">Over ons</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:+31659110607" class="nav-phone">☎ 06 5911 0607</a>
+      <a href="#contact" class="btn-nav-cta">Gratis offerte</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#diensten" onclick="toggleMenu()">Diensten</a>
+    <a href="#werkwijze" onclick="toggleMenu()">Werkwijze</a>
+    <a href="#waarom" onclick="toggleMenu()">Over ons</a>
+    <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="#contact" onclick="toggleMenu()" class="mobile-cta">Gratis offerte aanvragen</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Spoedontruiming mogelijk binnen 24 uur
+      </div>
+      <h1>Ontruimen<br><em>met gevoel</em></h1>
+      <p class="hero-intro">
+        Uw woning moet ontruimd worden. Dat is vaak een emotioneel en uitdagend proces —
+        of het nu een seniorverhuizing of een overlijden betreft. Snelleeg.nl behandelt
+        uw ontruiming met zorg en respect.
+      </p>
+      <ul class="hero-checks">
+        <li><span class="check">✓</span> Bezemschoon &amp; verkoopklaar opgeleverd</li>
+        <li><span class="check">✓</span> Woningen én bedrijfspanden</li>
+        <li><span class="check">✓</span> Duurzaam — kringloop &amp; recycling</li>
+        <li><span class="check">✓</span> Gratis offerte, vrijblijvend op locatie</li>
+      </ul>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Gratis offerte aanvragen</a>
+        <a href="tel:+31659110607" class="btn-ghost">☎ Direct bellen</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-inner">
+        <div class="hero-card-title">Snel geregeld</div>
+        <div class="hero-card-sub">Wij plannen een gratis afspraak op locatie en offreren vrijblijvend en snel.</div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-num">24u</div>
+            <div class="stat-label">Spoed mogelijk</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Bezemschoon</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">€0</div>
+            <div class="stat-label">Gratis offerte</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-num">♻️</div>
+            <div class="stat-label">Duurzaam</div>
+          </div>
+        </div>
+        <div class="hero-card-contact">
+          <a href="tel:+31659110607" class="card-contact-btn"><span>📞</span> +31 6 5911 0607</a>
+          <a href="mailto:johan@snelleeg.nl" class="card-contact-btn"><span>✉️</span> johan@snelleeg.nl</a>
+          <a href="https://wa.me/31659110607" class="card-contact-btn card-whatsapp"><span>💬</span> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-usp-bar">
+    <div class="hero-usp-item"><span>✓</span> Zorg &amp; respect</div>
+    <div class="hero-usp-item"><span>✓</span> Snel beschikbaar</div>
+    <div class="hero-usp-item"><span>✓</span> Duurzaam verwerkt</div>
+    <div class="hero-usp-item"><span>✓</span> Bezemschoon opgeleverd</div>
+    <div class="hero-usp-item"><span>✓</span> Gratis &amp; vrijblijvend</div>
+  </div>
+</section>
+
+<!-- WAAROM -->
+<section class="waarom" id="waarom">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-label">Waarom Snelleeg.nl?</p>
+      <h2 class="section-title">Wij begrijpen uw situatie</h2>
+      <p class="section-sub">
+        Snelleeg.nl neemt u alles uit handen — zorgvuldig, snel en met respect.
+        Uw wensen worden overal in meegenomen, met oog voor detail en duurzaamheid.
+      </p>
+    </div>
+    <div class="waarom-grid">
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">🤝</div>
+        <h3>Zorg &amp; respect</h3>
+        <p>Wij begrijpen dat een ontruiming een emotioneel proces is en handelen daar ook naar — snel en zorgvuldig.</p>
+      </div>
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">⚡</div>
+        <h3>Snel beschikbaar</h3>
+        <p>Spoedklus? Deadline? Geen probleem. Wij zijn flexibel en vinden altijd een oplossing, ook binnen 24 uur.</p>
+      </div>
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">♻️</div>
+        <h3>Duurzaam</h3>
+        <p>Waar mogelijk gaan zaken naar de kringloopwinkel of worden gerecycled. Verspilling voorkomen staat centraal.</p>
+      </div>
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">💶</div>
+        <h3>Transparant &amp; flexibel</h3>
+        <p>Gratis offerte op locatie. U kiest: all-in prijs of uurtarief. Geen verborgen kosten, geen verrassingen.</p>
+      </div>
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">🏠</div>
+        <h3>Verkoopklaar opgeleverd</h3>
+        <p>Van bezemschoon opleveren tot kleine reparaties en vloerbedekking verwijderen — wij zorgen voor het complete plaatje.</p>
+      </div>
+      <div class="waarom-item" data-aos>
+        <div class="waarom-icon">📦</div>
+        <h3>Alles uit handen</h3>
+        <p>U bepaalt wat waarheen gaat: afvoeren, verkopen, opslaan of achterlaten. Wij regelen het met zorg.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIENSTEN -->
+<section class="diensten" id="diensten">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-label">Wat wij doen</p>
+      <h2 class="section-title">Onze diensten</h2>
+      <p class="section-sub">
+        Van woningontruiming tot bedrijfspand, van seniorverhuizing tot spoedsituaties —
+        wij staan voor u klaar.
+      </p>
+    </div>
+    <div class="diensten-grid">
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--woning"><span>🏠</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Woningontruiming</h3>
+          <p>Wij ontzorgen u volledig bij de ontruiming van een woning of appartement. Bezemschoon en verkoopklaar opgeleverd, ook bij zwaar vervuilde woningen.</p>
+          <a href="#contact" class="dienst-link">Meer informatie →</a>
+        </div>
+      </div>
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--overlijden"><span>🕊️</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Nalatenschap &amp; overlijden</h3>
+          <p>Bij het overlijden van een naaste nemen wij de zorg voor de inboedel uit handen. Wij werken discreet, zorgvuldig en met gevoel voor uw situatie.</p>
+          <a href="#contact" class="dienst-link">Meer informatie →</a>
+        </div>
+      </div>
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--senior"><span>👴</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Seniorverhuizing</h3>
+          <p>Verhuist u of een dierbare naar een kleinere woning of verzorgingshuis? Wij helpen de inboedel te sorteren, afvoeren of herbestemmen.</p>
+          <a href="#contact" class="dienst-link">Meer informatie →</a>
+        </div>
+      </div>
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--bedrijf"><span>🏢</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Bedrijfsontruiming</h3>
+          <p>Kantoor, winkel of magazijn leegmaken? Wij ontruimen bedrijfspanden snel en efficiënt — ook met hoge spoed, zelfs binnen 24 uur.</p>
+          <a href="#contact" class="dienst-link">Meer informatie →</a>
+        </div>
+      </div>
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--spoed"><span>⚡</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Spoedontruiming</h3>
+          <p>Deadline of urgente situatie? Wij zijn flexibel en kunnen in de meeste gevallen binnen 24 uur starten. Neem direct contact op.</p>
+          <a href="tel:+31659110607" class="dienst-link">Direct bellen →</a>
+        </div>
+      </div>
+      <div class="dienst-card" data-aos>
+        <div class="dienst-img-wrap">
+          <div class="dienst-img dienst-img--extra"><span>🔧</span></div>
+        </div>
+        <div class="dienst-body">
+          <h3>Extra werkzaamheden</h3>
+          <p>Vloerbedekking verwijderen, kleine reparaties uitvoeren, verkoopklaar maken — wij doen het erbij zodat u geen andere partijen hoeft in te schakelen.</p>
+          <a href="#contact" class="dienst-link">Meer informatie →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section class="werkwijze" id="werkwijze">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-label" style="color:var(--green-light)">Hoe werkt het</p>
+      <h2 class="section-title" style="color:#fff">In 3 stappen geregeld</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.65)">
+        Geen gedoe, geen verrassingen. Wij zorgen voor een soepel proces van A tot Z.
+      </p>
+    </div>
+    <div class="stappen">
+      <div class="stap" data-aos>
+        <div class="stap-num">01</div>
+        <div class="stap-body">
+          <h3>Gratis afspraak op locatie</h3>
+          <p>Wij komen bij u langs om de woning te bekijken en uw wensen door te nemen. Snel gepland, geheel vrijblijvend.</p>
+        </div>
+      </div>
+      <div class="stap-arrow">→</div>
+      <div class="stap" data-aos>
+        <div class="stap-num">02</div>
+        <div class="stap-body">
+          <h3>Vrijblijvende offerte</h3>
+          <p>Na de bezichtiging ontvangt u snel een heldere offerte — all-in prijs of uurtarief, u kiest. Geen verborgen kosten.</p>
+        </div>
+      </div>
+      <div class="stap-arrow">→</div>
+      <div class="stap" data-aos>
+        <div class="stap-num">03</div>
+        <div class="stap-body">
+          <h3>Bezemschoon opgeleverd</h3>
+          <p>Wij voeren de ontruiming uit op het afgesproken moment en leveren de woning precies zo op als u dat wenst.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="review-score-big">
+        <div class="score-stars">★★★★★</div>
+        <div class="score-label">Uitstekend beoordeeld</div>
+      </div>
+      <p class="section-label">Ervaringen</p>
+      <h2 class="section-title">Wat klanten zeggen</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card" data-aos>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"De ontruiming van mijn moeders woning werd op een respectvolle en efficiënte manier geregeld. Alles werd netjes meegenomen en de woning was bezemschoon. Absoluut een aanrader!"</p>
+        <div class="review-footer">
+          <div class="review-avatar">M</div>
+          <div>
+            <div class="review-author">Marjan V.</div>
+            <div class="review-location">Haarlem</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card" data-aos>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Snel, professioneel en vriendelijk. Johan heeft ons goed geholpen bij een emotioneel proces. De offerte was duidelijk en er kwamen geen verrassingen achteraf."</p>
+        <div class="review-footer">
+          <div class="review-avatar">P</div>
+          <div>
+            <div class="review-author">Peter K.</div>
+            <div class="review-location">Amsterdam</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card" data-aos>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Binnen 24 uur konden ze starten met de spoedontruiming van ons bedrijfspand. Exact zoals afgesproken opgeleverd. Erg tevreden met de snelheid en kwaliteit."</p>
+        <div class="review-footer">
+          <div class="review-avatar">S</div>
+          <div>
+            <div class="review-author">Sandra H.</div>
+            <div class="review-location">Hoofddorp</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DUURZAAMHEID -->
+<section class="duurzaam">
+  <div class="container duurzaam-inner">
+    <div class="duurzaam-tekst" data-aos>
+      <p class="section-label">Duurzaamheid</p>
+      <h2 class="section-title">Spullen een tweede leven geven</h2>
+      <p>
+        Wij geloven in de kracht van duurzaamheid. Waar mogelijk brengen wij bruikbare spullen
+        naar de kringloopwinkel of vinden wij een andere bestemming. Wat echt niet meer
+        herbruikbaar is, voeren wij milieuvriendelijk en gescheiden af.
+      </p>
+      <p style="margin-top:1rem">
+        Wilt u bepaalde zaken laten verkopen of achterlaten voor verkoop? Ook dat regelen wij graag voor u.
+      </p>
+      <a href="#contact" class="btn-primary" style="margin-top:2rem;display:inline-flex">Neem contact op</a>
+    </div>
+    <div class="duurzaam-visual" data-aos>
+      <div class="duurzaam-card">
+        <div class="duurzaam-icon-big">♻️</div>
+        <div class="duurzaam-items">
+          <div class="duurzaam-item"><span>🪑</span> Meubels naar kringloop</div>
+          <div class="duurzaam-item"><span>📚</span> Boeken &amp; kleding herbestemmen</div>
+          <div class="duurzaam-item"><span>🛒</span> Waardevolle spullen verkopen</div>
+          <div class="duurzaam-item"><span>🗑️</span> Afval gescheiden verwerken</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container faq-inner">
+    <div class="faq-header-block" data-aos>
+      <p class="section-label">Veelgestelde vragen</p>
+      <h2 class="section-title">Alles wat u wil weten</h2>
+      <p class="section-sub">Heeft u een andere vraag? Neem gerust contact op.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is een spoedontruiming mogelijk?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Ja, in de meeste gevallen kunnen wij binnen 24 uur starten. Bel ons direct op <a href="tel:+31659110607">+31 6 5911 0607</a> voor beschikbaarheid.</div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Wat kost een woningontruiming?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">De kosten hangen af van de omvang en inhoud van de woning. Wij offreren gratis, vrijblijvend en snel na een bezoek op locatie — all-in prijs of uurtarief, u kiest.</div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Moet ik aanwezig zijn bij de ontruiming?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Dat is niet noodzakelijk. Na de afspraak op locatie en een korte bespreking van uw wensen kunnen wij zelfstandig en efficiënt aan het werk.</div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Wat gebeurt er met de spullen?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">U bepaalt wat waarheen gaat. Bruikbare spullen gaan naar kringloop of worden herbestemd. Waardevolle spullen kunnen worden verkocht. Wat niet meer bruikbaar is, wordt milieuvriendelijk en gescheiden afgevoerd.</div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Doen jullie ook kleine reparaties en vloerverwijdering?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Ja. Wij verzorgen ook kleine reparaties en verwijderen vloerbedekking, zodat de woning direct bezemschoon en verkoopklaar opgeleverd kan worden.</div>
+      </div>
+      <div class="faq-item" data-aos>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Kunnen jullie ook opslag regelen?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">Ja, indien gewenst vinden wij passende opslag voor uw spullen. Bespreek dit tijdens de afspraak op locatie.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header centered">
+      <p class="section-label">Neem contact op</p>
+      <h2 class="section-title">Gratis vrijblijvende offerte</h2>
+      <p class="section-sub">
+        Wij maken graag een afspraak op locatie, bekijken de situatie en sturen u daarna
+        snel een heldere offerte. Zo kunt u verder en heeft u geen omkijken meer naar de woning.
+      </p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-kaart" data-aos>
+        <div class="contact-icon">📞</div>
+        <h3>Bellen</h3>
+        <p>Direct contact voor vragen of spoedgevallen</p>
+        <a href="tel:+31659110607" class="contact-link">+31 6 5911 0607</a>
+      </div>
+      <div class="contact-kaart" data-aos>
+        <div class="contact-icon">✉️</div>
+        <h3>Mailen</h3>
+        <p>Stuur uw vraag of offerteverzoek per e-mail</p>
+        <a href="mailto:johan@snelleeg.nl" class="contact-link">johan@snelleeg.nl</a>
+      </div>
+      <div class="contact-kaart" data-aos>
+        <div class="contact-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>Snel en makkelijk via WhatsApp</p>
+        <a href="https://wa.me/31659110607" class="contact-link">Stuur een bericht</a>
+      </div>
+      <div class="contact-kaart" data-aos>
+        <div class="contact-icon">📍</div>
+        <h3>Locatie</h3>
+        <p>Gevestigd in Haarlem, actief in de regio</p>
+        <span class="contact-link">Rollandstraat 12, Haarlem</span>
+      </div>
+    </div>
+    <div class="contact-cta" data-aos>
+      <div class="cta-tekst">
+        <h3>Klaar om te starten?</h3>
+        <p>Bel, mail of app ons — wij reageren snel en denken graag met u mee.</p>
+      </div>
+      <div class="cta-knoppen">
+        <a href="tel:+31659110607" class="btn-primary">📞 Direct bellen</a>
+        <a href="mailto:johan@snelleeg.nl" class="btn-secondary">✉️ Offerte aanvragen</a>
+        <a href="https://wa.me/31659110607" class="btn-whatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <div class="footer-logo">Snelleeg<span>.nl</span></div>
+      <p class="footer-tagline">Ontruimen met gevoel</p>
+      <p class="footer-desc">Woningontruiming met zorg en respect. Snel beschikbaar, duurzaam en persoonlijk. Gevestigd in Haarlem, actief in de regio.</p>
+      <div class="footer-contact-list">
+        <a href="tel:+31659110607">📞 +31 6 5911 0607</a>
+        <a href="mailto:johan@snelleeg.nl">✉️ johan@snelleeg.nl</a>
+        <a href="https://wa.me/31659110607">💬 WhatsApp</a>
+        <span>📍 Rollandstraat 12, 2013 SP Haarlem</span>
+        <span>KvK Amsterdam 98927744</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Diensten</h4>
+      <ul>
+        <li><a href="#diensten">Woningontruiming</a></li>
+        <li><a href="#diensten">Nalatenschap</a></li>
+        <li><a href="#diensten">Seniorverhuizing</a></li>
+        <li><a href="#diensten">Bedrijfsontruiming</a></li>
+        <li><a href="#diensten">Spoedontruiming</a></li>
+        <li><a href="#diensten">Vloerverwijdering</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informatie</h4>
+      <ul>
+        <li><a href="#waarom">Over ons</a></li>
+        <li><a href="#werkwijze">Werkwijze</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#contact">Gratis offerte</a></li>
+        <li><a href="tel:+31659110607">Direct bellen</a></li>
+        <li><a href="https://wa.me/31659110607">WhatsApp</a></li>
+        <li><a href="mailto:johan@snelleeg.nl">E-mail</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2025 Snelleeg.nl — Alle rechten voorbehouden</span>
+    <span><a href="#">Privacybeleid</a> · <a href="#">Algemene voorwaarden</a></span>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOMBAR -->
+<div class="sticky-bar">
+  <a href="https://wa.me/31659110607" class="sticky-btn"><span>💬</span> WhatsApp</a>
+  <a href="#contact" class="sticky-btn sticky-btn--main"><span>📋</span> Gratis offerte</a>
+  <a href="tel:+31659110607" class="sticky-btn"><span>📞</span> Bellen</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
