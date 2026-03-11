@@ -47,19 +47,12 @@ nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid va
 @keyframes p{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.6)}}
 .htxt h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.08;margin-bottom:1.2rem}
 .htxt h1 em{font-style:italic;color:var(--gl);font-weight:700}
-.hint{font-size:1.05rem;line-height:1.75;color:rgba(255,255,255,.82);margin-bottom:1.8rem;max-width:500px}
-.hlist{list-style:none;margin-bottom:2.2rem;display:flex;flex-direction:column;gap:.5rem}
-.hlist li{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:rgba(255,255,255,.88);font-weight:500}
-.hlist li::before{content:'✓';width:20px;height:20px;background:var(--gl);color:var(--gd);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:900;flex-shrink:0}
+.hint{font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.88);margin-bottom:2rem;max-width:520px}
 .hbtns{display:flex;gap:1rem;flex-wrap:wrap}
 /* Hero kaart */
 .hcard{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;bottom:-2rem}
 .hcard-t{font-size:1.25rem;font-weight:800;color:#1a1a1a;margin-bottom:.3rem}
 .hcard-s{font-size:.83rem;color:var(--sub);margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--rand)}
-.hstats{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1.3rem}
-.hstat{background:var(--gb);border-radius:12px;padding:.85rem;text-align:center}
-.hstat-n{font-size:1.65rem;font-weight:800;color:var(--g);line-height:1;margin-bottom:.2rem}
-.hstat-l{font-size:.7rem;color:var(--sub);font-weight:500}
 .hcc{display:flex;flex-direction:column;gap:.5rem}
 .hcc a{display:flex;align-items:center;gap:.6rem;background:var(--lg);border-radius:10px;padding:.7rem 1rem;font-size:.85rem;font-weight:600;color:#1a1a1a;text-decoration:none;transition:.2s}
 .hcc a:hover{background:var(--gb);color:var(--g)}
@@ -68,7 +61,7 @@ nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid va
 /* USP balk */
 .usp{background:rgba(0,0,0,.22);border-top:1px solid rgba(255,255,255,.1);margin-top:4rem;padding:1rem 1.5rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
 .usp span{font-size:.82rem;font-weight:600;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:.4rem}
-.usp span::before{content:'✓';color:var(--gl);font-weight:800}
+.usp span::before{content:'\2713';color:var(--gl);font-weight:800}
 /* KNOPPEN */
 .btn-a{background:var(--acc);color:#fff;padding:.85rem 1.8rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;border:none;cursor:pointer}
 .btn-a:hover{background:var(--acc2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(232,160,69,.4)}
@@ -81,94 +74,54 @@ nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid va
 .btn-rw{background:transparent;color:#fff;padding:.85rem 2rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.45);display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
 .btn-rw:hover{border-color:#fff;background:rgba(255,255,255,.1)}
 /* SECTIES */
-.sec{padding:5.5rem 1.5rem}.sec-grijs{padding:5.5rem 1.5rem;background:var(--lg)}.sec-gd{padding:5.5rem 1.5rem;background:var(--gd)}.sec-gb{padding:5.5rem 1.5rem;background:var(--gb)}
+.sec{padding:5.5rem 1.5rem}
+.sec-grijs{padding:5.5rem 1.5rem;background:var(--lg)}
+.sec-gd{padding:5.5rem 1.5rem;background:var(--gd)}
 .wrap{max-width:1200px;margin:0 auto}
 .kop{text-align:center;margin-bottom:3.5rem}
 .lbl{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:.6rem}
 .lbl-l{color:var(--gl)!important}
 h2.t{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:.9rem}
 h2.t-w{color:#fff}
-p.s{font-size:1rem;color:var(--sub);line-height:1.75;max-width:580px;margin:0 auto}
+p.s{font-size:1rem;color:var(--sub);line-height:1.75;max-width:620px;margin:0 auto}
 p.s-w{color:rgba(255,255,255,.65)!important}
-/* WAAROM */
-.wraster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.wk{background:#fff;border:1px solid var(--rand);border-radius:16px;padding:2rem;transition:.3s}
-.wk:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.1);border-color:var(--gl)}
-.wi{font-size:1.9rem;margin-bottom:.9rem;display:block}
-.wk h3{font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:.45rem}
-.wk p{font-size:.86rem;color:var(--sub);line-height:1.65}
 /* DIENSTEN */
 .draster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .dk{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--rand);transition:.3s;display:flex;flex-direction:column}
 .dk:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.12)}
-.dimg{height:140px;display:flex;align-items:center;justify-content:center;font-size:3rem}
-.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}.d2{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}.d3{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}.d4{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}.d5{background:linear-gradient(135deg,#fffde7,#fff9c4)}.d6{background:linear-gradient(135deg,#fce4ec,#f8bbd0)}
-.dbody{padding:1.5rem;flex:1;display:flex;flex-direction:column}
-.dbody h3{font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:.45rem}
-.dbody p{font-size:.84rem;color:var(--sub);line-height:1.65;flex:1;margin-bottom:1.2rem}
-.dlink{font-size:.84rem;font-weight:700;color:var(--g);text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;transition:gap .2s}
-.dlink:hover{gap:.6rem}
-/* WERKWIJZE */
-.sraster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.sk{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:2rem;transition:.3s}
-.sk:hover{background:rgba(255,255,255,.1)}
-.snr{font-size:3.2rem;font-weight:800;color:rgba(116,198,157,.2);line-height:1;margin-bottom:1rem}
-.sk h3{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.45rem}
-.sk p{font-size:.86rem;color:rgba(255,255,255,.6);line-height:1.65}
-/* OVER ONS */
-.ogrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.otxt h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:1rem}
-.otxt p{font-size:.93rem;color:var(--sub);line-height:1.8;margin-bottom:1rem}
-.ocard{background:var(--g);border-radius:20px;padding:2.5rem;color:#fff;position:relative;overflow:hidden}
-.ocard::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:rgba(255,255,255,.07);border-radius:50%}
-.ocard h3{font-size:1.35rem;font-weight:800;margin-bottom:.4rem}
-.ocard p{font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.65;margin-bottom:1.5rem}
-.occ{display:flex;flex-direction:column;gap:.55rem}
-.occ a{display:flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:.72rem 1rem;color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;transition:.2s}
-.occ a:hover{background:rgba(255,255,255,.2)}
-/* REVIEWS */
-.rscore{text-align:center;margin-bottom:1.5rem}
-.rsg{font-size:2rem;color:var(--acc);letter-spacing:3px}
-.rraster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.rv{background:#fff;border-radius:16px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,.07);transition:.25s;display:flex;flex-direction:column}
-.rv:hover{transform:translateY(-4px)}
-.rvs{color:var(--acc);font-size:1rem;letter-spacing:1px;margin-bottom:.9rem}
-.rvt{font-size:.86rem;color:var(--sub);line-height:1.7;font-style:italic;flex:1;margin-bottom:1.4rem}
-.rvf{display:flex;align-items:center;gap:.75rem}
-.rva{width:38px;height:38px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem;flex-shrink:0}
-.rvn{font-weight:700;font-size:.875rem;color:#1a1a1a}
-.rvp{font-size:.78rem;color:var(--sub)}
-/* DUURZAAMHEID */
-.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
-.dtxt h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:1rem}
-.dtxt p{font-size:.93rem;color:var(--sub);line-height:1.8;margin-bottom:1rem}
-.dcard{background:var(--g);border-radius:20px;padding:2.5rem;color:#fff;position:relative;overflow:hidden}
-.dcard::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:rgba(255,255,255,.06);border-radius:50%}
-.dico{font-size:3.2rem;margin-bottom:1.4rem;display:block}
-.ditems{display:flex;flex-direction:column;gap:.75rem}
-.di{display:flex;align-items:center;gap:.7rem;background:rgba(255,255,255,.1);border-radius:10px;padding:.72rem 1rem;font-size:.86rem;font-weight:500}
-/* FAQ */
-.fgrid{display:grid;grid-template-columns:280px 1fr;gap:4rem;align-items:start}
-.fside{position:sticky;top:88px}
-.fside h2{font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:.9rem}
-.fside p{font-size:.88rem;color:var(--sub);line-height:1.75;margin-bottom:1.5rem}
-.fi{border-bottom:1px solid var(--rand)}
-.fq{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0;font-size:.93rem;font-weight:600;color:#1a1a1a;cursor:pointer;text-align:left;gap:1rem;font-family:'Inter',sans-serif;transition:.2s}
-.fq:hover{color:var(--g)}
-.fp{width:28px;height:28px;background:var(--gb);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--g);font-size:1.3rem;flex-shrink:0;transition:transform .3s,background .2s;line-height:1;font-weight:300}
-.fa{font-size:.86rem;color:var(--sub);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
-.fa a{color:var(--g)}
-.fi.open .fa{max-height:300px;padding-bottom:1.2rem}
-.fi.open .fp{transform:rotate(45deg);background:var(--g);color:#fff}
+.dimg{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.8rem}
+.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}
+.d2{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}
+.d3{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}
+.d4{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}
+.d5{background:linear-gradient(135deg,#fffde7,#fff9c4)}
+.d6{background:linear-gradient(135deg,#fce4ec,#f8bbd0)}
+.d7{background:linear-gradient(135deg,#f3e5f5,#e1bee7)}
+.d8{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}
+.d9{background:linear-gradient(135deg,#fbe9e7,#ffccbc)}
+.d10{background:linear-gradient(135deg,#e3f2fd,#bbdefb)}
+.d11{background:linear-gradient(135deg,#f1f8e9,#dcedc8)}
+.dbody{padding:1.4rem;flex:1;display:flex;flex-direction:column}
+.dbody h3{font-size:.98rem;font-weight:700;color:#1a1a1a;margin-bottom:.4rem}
+.dbody p{font-size:.84rem;color:var(--sub);line-height:1.65;flex:1}
+/* CONTACT */
+.cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:700px;margin:0 auto}
+.ck{background:#fff;border:1px solid var(--rand);border-radius:16px;padding:1.8rem;text-align:center;transition:.3s}
+.ck:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.1);border-color:var(--gl)}
+.ck a{text-decoration:none;color:var(--tekst)}
+.cico{font-size:2.2rem;margin-bottom:.8rem;display:block}
+.ck h3{font-size:.95rem;font-weight:700;color:#1a1a1a;margin-bottom:.35rem}
+.ck p,.ck a{font-size:.88rem;color:var(--sub)}
+.ck a:hover{color:var(--g)}
 /* CTA */
 .cta{background:var(--g);padding:4.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
 .cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:rgba(255,255,255,.04);border-radius:50%;pointer-events:none}
 .cta h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#fff;margin-bottom:.8rem;position:relative}
-.cta p{font-size:1rem;color:rgba(255,255,255,.75);margin-bottom:2.2rem;max-width:500px;margin-left:auto;margin-right:auto;position:relative}
+.cta p{font-size:1rem;color:rgba(255,255,255,.78);margin-bottom:2.2rem;max-width:540px;margin-left:auto;margin-right:auto;position:relative;line-height:1.75}
 .ctabtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative}
 /* FOOTER */
 footer{background:#111;color:rgba(255,255,255,.55)}
-.fb{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:4rem 1.5rem 3rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.fb{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding:4rem 1.5rem 3rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .flogo{font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:.2rem}
 .flogo span{color:var(--gl)}
 .fslogan{font-style:italic;color:var(--gl);font-size:.85rem;margin-bottom:1rem}
@@ -196,14 +149,11 @@ footer{background:#111;color:rgba(255,255,255,.55)}
 @media(max-width:1050px){
   .nmenu,.nright{display:none}.ham{display:flex}
   .hcont{grid-template-columns:1fr}.hcard{display:none}.htxt{padding-bottom:3rem}
-  .wraster{grid-template-columns:repeat(2,1fr)}.draster{grid-template-columns:repeat(2,1fr)}
-  .sraster{grid-template-columns:1fr}.ogrid{grid-template-columns:1fr;gap:2.5rem}
-  .rraster{grid-template-columns:repeat(2,1fr)}.dgrid{grid-template-columns:1fr;gap:2.5rem}
-  .fgrid{grid-template-columns:1fr}.fside{position:static}
+  .draster{grid-template-columns:repeat(2,1fr)}
   .fb{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .wraster,.draster,.rraster{grid-template-columns:1fr}.fb{grid-template-columns:1fr}
+  .draster,.cgrid{grid-template-columns:1fr}.fb{grid-template-columns:1fr}
   .htxt h1{font-size:2.2rem}.usp{gap:1rem}.top{display:none}
 }
 </style>
@@ -220,10 +170,6 @@ footer{background:#111;color:rgba(255,255,255,.55)}
     <a href="#" class="logo">Snelleeg<span>.nl</span></a>
     <ul class="nmenu">
       <li><a href="#diensten">Diensten</a></li>
-      <li><a href="#werkwijze">Werkwijze</a></li>
-      <li><a href="#over">Over ons</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nright">
@@ -236,40 +182,26 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   </div>
   <div class="mmenu" id="mm">
     <a href="#diensten" onclick="toggleMenu()">Diensten</a>
-    <a href="#werkwijze" onclick="toggleMenu()">Werkwijze</a>
-    <a href="#over" onclick="toggleMenu()">Over ons</a>
-    <a href="#reviews" onclick="toggleMenu()">Reviews</a>
-    <a href="#faq" onclick="toggleMenu()">FAQ</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
     <a href="#contact" onclick="toggleMenu()">Gratis offerte aanvragen</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hcont">
     <div class="htxt">
       <div class="htag">Spoedontruiming mogelijk binnen 24 uur</div>
       <h1>Ontruimen<br><em>met gevoel</em></h1>
-      <p class="hint">Uw woning moet ontruimd worden. Dat is vaak een emotioneel en uitdagend proces &mdash; of het nu een seniorverhuizing of een overlijden betreft. Snelleeg.nl behandelt uw ontruiming met zorg en respect.</p>
-      <ul class="hlist">
-        <li>Afwikkeling na overlijden</li>
-        <li>Seniorverhuizing</li>
-        <li>Spoedontruiming binnen 24 uur</li>
-        <li>Woningen &eacute;n bedrijfspanden</li>
-      </ul>
+      <p class="hint">Uw woning moet ontruimd worden. Dat is vaak een emotioneel en uitdagend proces. Zo kan het een seniorverhuizing betreffen, maar ook een overlijden. Snelleeg.nl behandelt uw ontruiming met zorg en respect. Wij begrijpen uw situatie en handelen daar ook naar door het snel en zorgvuldig af te handelen. Uw wensen worden overal in meegenomen met oog voor detail en duurzaamheid.</p>
       <div class="hbtns">
-        <a href="#contact" class="btn-a">Offerte aanvragen</a>
+        <a href="#contact" class="btn-a">Gratis offerte aanvragen</a>
         <a href="tel:+31659110607" class="btn-g">&#9742; Direct bellen</a>
       </div>
     </div>
     <div class="hcard">
-      <div class="hcard-t">Snel geregeld</div>
-      <div class="hcard-s">Gratis afspraak op locatie. Wij offreren vrijblijvend en snel.</div>
-      <div class="hstats">
-        <div class="hstat"><div class="hstat-n">24u</div><div class="hstat-l">Spoed mogelijk</div></div>
-        <div class="hstat"><div class="hstat-n">100%</div><div class="hstat-l">Bezemschoon</div></div>
-        <div class="hstat"><div class="hstat-n">&euro;0</div><div class="hstat-l">Gratis offerte</div></div>
-        <div class="hstat"><div class="hstat-n">&#9851;</div><div class="hstat-l">Duurzaam</div></div>
-      </div>
+      <div class="hcard-t">Direct contact</div>
+      <div class="hcard-s">Gratis afspraak op locatie. Vrijblijvend en snel geoffreerd.</div>
       <div class="hcc">
         <a href="tel:+31659110607">&#128222;&nbsp; +31 6 5911 0607</a>
         <a href="mailto:johan@snelleeg.nl">&#9993;&nbsp; johan@snelleeg.nl</a>
@@ -278,161 +210,79 @@ footer{background:#111;color:rgba(255,255,255,.55)}
     </div>
   </div>
   <div class="usp">
-    <span>Zorg &amp; respect</span>
     <span>Snel beschikbaar</span>
-    <span>Duurzame verwerking</span>
+    <span>Duurzaam werken</span>
     <span>Bezemschoon opgeleverd</span>
-    <span>Gratis &amp; vrijblijvend</span>
+    <span>Woningen &amp; bedrijfspanden</span>
+    <span>Gratis offerte</span>
   </div>
 </section>
 
-<section class="sec" id="over">
-  <div class="wrap">
-    <div class="kop">
-      <span class="lbl">Waarom Snelleeg.nl?</span>
-      <h2 class="t">Ontruiming met zorg en gevoel</h2>
-      <p class="s">Snelleeg.nl neemt u alles uit handen &mdash; zorgvuldig, snel en met respect. Uw wensen worden overal in meegenomen, met oog voor detail en duurzaamheid.</p>
-    </div>
-    <div class="wraster">
-      <div class="wk" data-aos><span class="wi">&#129309;</span><h3>Zorg &amp; respect</h3><p>Wij begrijpen dat een ontruiming een emotioneel proces is en handelen daar ook naar &mdash; snel en zorgvuldig.</p></div>
-      <div class="wk" data-aos><span class="wi">&#9989;</span><h3>Volledige ontzorging</h3><p>U overhandigt de sleutel en wij zorgen voor de rest. De woning wordt bezemschoon en verkoopklaar opgeleverd.</p></div>
-      <div class="wk" data-aos><span class="wi">&#9889;</span><h3>Snel beschikbaar</h3><p>Spoedklus? Geen probleem. Wij zijn flexibel en vinden altijd een oplossing &mdash; ook binnen 24 uur.</p></div>
-      <div class="wk" data-aos><span class="wi">&#9851;</span><h3>Duurzaamheid</h3><p>Waar mogelijk gaan spullen naar kringloop of worden herbestemd. Wij voorkomen verspilling en verwerken alles verantwoord.</p></div>
-      <div class="wk" data-aos><span class="wi">&#128182;</span><h3>Transparante prijzen</h3><p>Gratis offerte op locatie. All-in of uurtarief &mdash; u kiest. Geen verborgen kosten, geen verrassingen achteraf.</p></div>
-      <div class="wk" data-aos><span class="wi">&#128230;</span><h3>Alles uit handen</h3><p>Van afvoeren en verkopen tot opslaan of herbestemmen &mdash; u bepaalt wat er met de inboedel gebeurt.</p></div>
-    </div>
-  </div>
-</section>
-
+<!-- DIENSTEN -->
 <section class="sec-grijs" id="diensten">
   <div class="wrap">
     <div class="kop">
-      <span class="lbl">Wat wij doen</span>
+      <span class="lbl">Wat wij voor u doen</span>
       <h2 class="t">Onze diensten</h2>
-      <p class="s">Van woningontruiming tot bedrijfspand, van seniorverhuizing tot spoedsituaties &mdash; Snelleeg.nl staat voor u klaar.</p>
+      <p class="s">Laat ons uw zorgen uit handen nemen, zodat u zich op belangrijker zaken kunt richten.</p>
     </div>
     <div class="draster">
-      <div class="dk" data-aos><div class="dimg d1">&#127968;</div><div class="dbody"><h3>Woningontruiming</h3><p>Wij ontzorgen u volledig bij de ontruiming van een woning of appartement. Bezemschoon en verkoopklaar, ook bij zwaar vervuilde woningen.</p><a href="#contact" class="dlink">Meer informatie &rarr;</a></div></div>
-      <div class="dk" data-aos><div class="dimg d2">&#128507;</div><div class="dbody"><h3>Nalatenschap &amp; overlijden</h3><p>Bij het overlijden van een naaste nemen wij de zorg voor de inboedel uit handen. Discreet, zorgvuldig en met gevoel voor uw situatie.</p><a href="#contact" class="dlink">Meer informatie &rarr;</a></div></div>
-      <div class="dk" data-aos><div class="dimg d3">&#128116;</div><div class="dbody"><h3>Seniorverhuizing</h3><p>Verhuist u of een dierbare naar een kleinere woning of verzorgingshuis? Wij helpen de inboedel te sorteren, afvoeren of herbestemmen.</p><a href="#contact" class="dlink">Meer informatie &rarr;</a></div></div>
-      <div class="dk" data-aos><div class="dimg d4">&#127962;</div><div class="dbody"><h3>Bedrijfsontruiming</h3><p>Kantoor, winkel of magazijn leegmaken? Wij ontruimen bedrijfspanden snel en effici&euml;nt &mdash; ook met hoge spoed, zelfs binnen 24 uur.</p><a href="#contact" class="dlink">Meer informatie &rarr;</a></div></div>
-      <div class="dk" data-aos><div class="dimg d5">&#9889;</div><div class="dbody"><h3>Spoedontruiming</h3><p>Deadline of urgente situatie? In de meeste gevallen kunnen wij binnen 24 uur starten. Neem direct contact op.</p><a href="tel:+31659110607" class="dlink">Direct bellen &rarr;</a></div></div>
-      <div class="dk" data-aos><div class="dimg d6">&#128295;</div><div class="dbody"><h3>Extra werkzaamheden</h3><p>Vloerbedekking verwijderen, kleine reparaties, verkoopklaar maken &mdash; wij doen het erbij, zodat u geen andere partijen hoeft in te schakelen.</p><a href="#contact" class="dlink">Meer informatie &rarr;</a></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec-gd" id="werkwijze">
-  <div class="wrap">
-    <div class="kop">
-      <span class="lbl lbl-l">Hoe werkt het</span>
-      <h2 class="t t-w">In 3 stappen geregeld</h2>
-      <p class="s s-w">Geen gedoe, geen verrassingen. Wij zorgen voor een soepel en transparant proces van A tot Z.</p>
-    </div>
-    <div class="sraster">
-      <div class="sk" data-aos><div class="snr">01</div><h3>Gratis afspraak op locatie</h3><p>Wij komen bij u langs om de woning te bekijken en uw wensen door te nemen. Snel gepland, geheel vrijblijvend.</p></div>
-      <div class="sk" data-aos><div class="snr">02</div><h3>Vrijblijvende offerte</h3><p>Na de bezichtiging ontvangt u snel een heldere offerte. All-in prijs of uurtarief &mdash; u kiest. Geen verborgen kosten.</p></div>
-      <div class="sk" data-aos><div class="snr">03</div><h3>Bezemschoon opgeleverd</h3><p>Wij voeren de ontruiming uit op het afgesproken moment en leveren de woning precies zo op als u dat wenst.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="ogrid">
-      <div class="otxt" data-aos>
-        <span class="lbl">Over Snelleeg.nl</span>
-        <h2>Ontruimen met gevoel</h2>
-        <p>Snelleeg.nl is gevestigd in Haarlem en actief in de regio. Wij begrijpen dat een ontruiming meer is dan spullen weghalen &mdash; het is een persoonlijk moment dat zorgvuldigheid vraagt.</p>
-        <p>Of het nu gaat om een seniorverhuizing, het afwikkelen van een nalatenschap of een spoedontruiming van een bedrijfspand: wij handelen snel, zorgvuldig en met oog voor uw situatie.</p>
-        <p>Laat ons uw zorgen uit handen nemen, zodat u zich op belangrijker zaken kunt richten.</p>
-        <a href="#contact" class="btn-groen" style="margin-top:1.5rem">Neem contact op</a>
+      <div class="dk" data-aos>
+        <div class="dimg d1">&#127968;</div>
+        <div class="dbody"><h3>Ontzorging bij ontruiming</h3><p>Wij staan u bij bij de volledige ontruiming van een woning. U hoeft nergens naar om te kijken.</p></div>
       </div>
-      <div data-aos>
-        <div class="ocard">
-          <h3>Direct contact</h3>
-          <p>Vragen of een offerte aanvragen? Wij reageren snel en denken graag met u mee.</p>
-          <div class="occ">
-            <a href="tel:+31659110607">&#128222;&nbsp; +31 6 5911 0607</a>
-            <a href="mailto:johan@snelleeg.nl">&#9993;&nbsp; johan@snelleeg.nl</a>
-            <a href="https://wa.me/31659110607">&#128172;&nbsp; WhatsApp</a>
-            <a href="#contact">&#128203;&nbsp; Gratis offerte aanvragen</a>
-          </div>
-        </div>
+      <div class="dk" data-aos>
+        <div class="dimg d2">&#128230;</div>
+        <div class="dbody"><h3>Afvoeren &amp; vervoeren</h3><p>U bepaalt welke zaken waarheen worden vervoerd of afgevoerd. Altijd met zorg en gevoel voor uw situatie.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d3">&#9851;</div>
+        <div class="dbody"><h3>Duurzaam werken</h3><p>Waar mogelijk worden zaken naar de kringloopwinkel gebracht, dan wel gerecycled.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d4">&#9889;</div>
+        <div class="dbody"><h3>Snel beschikbaar</h3><p>Spoedklus of deadline? Geen probleem. We vinden altijd een oplossing &mdash; ook binnen 24 uur.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d5">&#128176;</div>
+        <div class="dbody"><h3>Verkoop regelen</h3><p>Wilt u iets uit de woning verkopen, of achterlaten voor verkoop? Wij regelen het voor u.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d6">&#128722;</div>
+        <div class="dbody"><h3>Opslag vinden</h3><p>Indien nodig vinden wij passende opslag voor uw spullen.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d7">&#129529;</div>
+        <div class="dbody"><h3>Bezemschoon opleveren</h3><p>De woning wordt bezemschoon en verkoopklaar opgeleverd, indien gewenst. Ook zwaar vervuilde woningen.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d8">&#128295;</div>
+        <div class="dbody"><h3>Kleine reparaties</h3><p>Wij voeren ook kleine reparaties uit, zodat u geen andere partijen hoeft in te schakelen.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d9">&#128218;</div>
+        <div class="dbody"><h3>Vloerbedekking verwijderen</h3><p>Vloerbedekking verwijderen kan een zware klus zijn. Dat doen we graag voor u.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d10">&#128200;</div>
+        <div class="dbody"><h3>Flexibele tarieven</h3><p>Wij werken op een all-in prijs of op uurbasis. U bepaalt wat het beste bij uw situatie past.</p></div>
+      </div>
+      <div class="dk" data-aos>
+        <div class="dimg d11">&#127962;</div>
+        <div class="dbody"><h3>Woningen &amp; bedrijfspanden</h3><p>Wij verzorgen ontruimingen van woningen en bedrijfspanden. Ook met hoge spoed, zelfs binnen 24 uur.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec-gb" id="reviews">
-  <div class="wrap">
-    <div class="kop">
-      <div class="rscore"><div class="rsg">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
-      <span class="lbl">Ervaringen</span>
-      <h2 class="t">Wat klanten zeggen</h2>
-    </div>
-    <div class="rraster">
-      <div class="rv" data-aos><div class="rvs">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rvt">"De ontruiming van mijn moeders woning werd op een respectvolle en effici&euml;nte manier geregeld. Alles werd netjes meegenomen en de woning was bezemschoon. Absoluut een aanrader!"</p><div class="rvf"><div class="rva">M</div><div><div class="rvn">Marjan V.</div><div class="rvp">Haarlem</div></div></div></div>
-      <div class="rv" data-aos><div class="rvs">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rvt">"Snel, professioneel en vriendelijk. Johan heeft ons goed geholpen bij een emotioneel proces. De offerte was duidelijk en er kwamen geen verrassingen achteraf."</p><div class="rvf"><div class="rva">P</div><div><div class="rvn">Peter K.</div><div class="rvp">Amsterdam</div></div></div></div>
-      <div class="rv" data-aos><div class="rvs">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rvt">"Binnen 24 uur konden ze starten met de spoedontruiming van ons bedrijfspand. Exact zoals afgesproken opgeleverd. Erg tevreden met de snelheid en kwaliteit."</p><div class="rvf"><div class="rva">S</div><div><div class="rvn">Sandra H.</div><div class="rvp">Hoofddorp</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="dgrid">
-      <div class="dtxt" data-aos>
-        <span class="lbl">Duurzaamheid</span>
-        <h2>Spullen een tweede leven geven</h2>
-        <p>Wij geloven in de kracht van duurzaamheid. Waar mogelijk brengen wij bruikbare spullen naar de kringloopwinkel of vinden wij een andere bestemming.</p>
-        <p>Wilt u bepaalde zaken laten verkopen of achterlaten voor verkoop? Ook dat regelen wij graag voor u.</p>
-        <a href="#contact" class="btn-groen" style="margin-top:1.5rem">Offerte aanvragen</a>
-      </div>
-      <div data-aos>
-        <div class="dcard">
-          <span class="dico">&#9851;</span>
-          <div class="ditems">
-            <div class="di">&#129681;&nbsp; Meubels naar kringloop</div>
-            <div class="di">&#128218;&nbsp; Boeken &amp; kleding herbestemmen</div>
-            <div class="di">&#128717;&nbsp; Waardevolle spullen verkopen</div>
-            <div class="di">&#128465;&nbsp; Afval gescheiden verwerken</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec-grijs" id="faq">
-  <div class="wrap">
-    <div class="fgrid">
-      <div class="fside" data-aos>
-        <span class="lbl">Veelgestelde vragen</span>
-        <h2>Alles wat u wil weten</h2>
-        <p>Heeft u een andere vraag? Neem gerust contact op via telefoon, e-mail of WhatsApp.</p>
-        <a href="#contact" class="btn-groen">Neem contact op</a>
-      </div>
-      <div>
-        <div class="fi open" data-aos><button class="fq" onclick="toggleFaq(this)">Is een spoedontruiming mogelijk?<span class="fp">+</span></button><div class="fa">Ja, in de meeste gevallen kunnen wij binnen 24 uur starten. Bel ons direct op <a href="tel:+31659110607">+31 6 5911 0607</a> voor beschikbaarheid.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Wat kost een woningontruiming?<span class="fp">+</span></button><div class="fa">De kosten hangen af van de omvang en inhoud van de woning. Wij offreren gratis, vrijblijvend en snel na een bezoek op locatie &mdash; all-in prijs of uurtarief, u kiest.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Moet ik aanwezig zijn bij de ontruiming?<span class="fp">+</span></button><div class="fa">Dat is niet noodzakelijk. Na een sleuteloverdracht en een korte bespreking van uw wensen kunnen wij zelfstandig en effici&euml;nt aan het werk.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Wat gebeurt er met de spullen?<span class="fp">+</span></button><div class="fa">U bepaalt wat waarheen gaat. Bruikbare spullen gaan naar kringloop of worden herbestemd. Waardevolle spullen kunnen worden verkocht. Wat niet meer bruikbaar is, wordt milieuvriendelijk en gescheiden afgevoerd.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Doen jullie ook kleine reparaties en vloerverwijdering?<span class="fp">+</span></button><div class="fa">Ja. Wij verzorgen ook kleine reparaties en verwijderen vloerbedekking, zodat de woning direct bezemschoon en verkoopklaar opgeleverd kan worden.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Helpt Snelleeg.nl ook bij seniorverhuizingen?<span class="fp">+</span></button><div class="fa">Ja, wij helpen ook bij verhuizingen naar een kleinere woning of verzorgingshuis. Wij helpen de inboedel te sorteren en alles wat achterblijft netjes te verwerken.</div></div>
-        <div class="fi" data-aos><button class="fq" onclick="toggleFaq(this)">Kunnen jullie ook opslag regelen?<span class="fp">+</span></button><div class="fa">Ja, indien gewenst vinden wij passende opslag voor uw spullen. Bespreek dit tijdens de afspraak op locatie.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- CONTACT -->
 <section class="cta" id="contact">
   <div class="wrap">
-    <h2>Gratis een vrijblijvende offerte?</h2>
-    <p>Neem contact met ons op. Wij plannen graag een afspraak op locatie, bespreken uw situatie en offreren snel en vrijblijvend.</p>
+    <h2>Heeft u vragen?</h2>
+    <p>Neem dan contact met ons op via onderstaande mogelijkheden. Wij maken dan graag een afspraak op locatie om met u door te nemen wat u wil laten uitvoeren. Daarna offreren wij u graag gratis, geheel vrijblijvend en snel.</p>
     <div class="ctabtns">
-      <a href="tel:+31659110607" class="btn-wit">&#128222; Bellen</a>
-      <a href="mailto:johan@snelleeg.nl" class="btn-wit">&#9993; Mailen</a>
+      <a href="tel:+31659110607" class="btn-wit">&#128222; +31 6 5911 0607</a>
+      <a href="mailto:johan@snelleeg.nl" class="btn-wit">&#9993; johan@snelleeg.nl</a>
       <a href="https://wa.me/31659110607" class="btn-rw">&#128172; WhatsApp</a>
     </div>
   </div>
@@ -452,9 +302,26 @@ footer{background:#111;color:rgba(255,255,255,.55)}
         <span>KvK Amsterdam 98927744</span>
       </div>
     </div>
-    <div class="fkol"><h4>Diensten</h4><ul><li><a href="#diensten">Woningontruiming</a></li><li><a href="#diensten">Nalatenschap</a></li><li><a href="#diensten">Seniorverhuizing</a></li><li><a href="#diensten">Bedrijfsontruiming</a></li><li><a href="#diensten">Spoedontruiming</a></li><li><a href="#diensten">Vloerverwijdering</a></li></ul></div>
-    <div class="fkol"><h4>Informatie</h4><ul><li><a href="#over">Over ons</a></li><li><a href="#werkwijze">Werkwijze</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-    <div class="fkol"><h4>Contact</h4><ul><li><a href="#contact">Gratis offerte</a></li><li><a href="tel:+31659110607">Direct bellen</a></li><li><a href="https://wa.me/31659110607">WhatsApp</a></li><li><a href="mailto:johan@snelleeg.nl">E-mail</a></li></ul></div>
+    <div class="fkol">
+      <h4>Diensten</h4>
+      <ul>
+        <li><a href="#diensten">Ontzorging bij ontruiming</a></li>
+        <li><a href="#diensten">Afvoeren &amp; vervoeren</a></li>
+        <li><a href="#diensten">Duurzaam werken</a></li>
+        <li><a href="#diensten">Bezemschoon opleveren</a></li>
+        <li><a href="#diensten">Kleine reparaties</a></li>
+        <li><a href="#diensten">Bedrijfspanden</a></li>
+      </ul>
+    </div>
+    <div class="fkol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#contact">Gratis offerte</a></li>
+        <li><a href="tel:+31659110607">Direct bellen</a></li>
+        <li><a href="https://wa.me/31659110607">WhatsApp</a></li>
+        <li><a href="mailto:johan@snelleeg.nl">E-mail</a></li>
+      </ul>
+    </div>
   </div>
   <div class="fbot">
     <span>&copy; 2025 Snelleeg.nl &mdash; Alle rechten voorbehouden</span>
@@ -470,12 +337,6 @@ footer{background:#111;color:rgba(255,255,255,.55)}
 
 <script>
 function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
-function toggleFaq(btn){
-  const item=btn.closest('.fi');
-  const open=item.classList.contains('open');
-  document.querySelectorAll('.fi').forEach(i=>i.classList.remove('open'));
-  if(!open)item.classList.add('open');
-}
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('zb')});
 },{threshold:.12});
