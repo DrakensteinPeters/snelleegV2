@@ -11,14 +11,12 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a1a;overflow-x:hidden;padding-bottom:64px}
 :root{
-  --g:#f5c800;--gd:#1a1a1a;--gm:#f5c800;--gl:#ffe566;--gb:#fff9d6;
+  --g:#f5c800;--gd:#1a1a1a;--gl:#ffe566;--gb:#fff9d6;
   --acc:#f5c800;--acc2:#c9a200;--lg:#f5f5f5;--rand:#e0e0e0;--sub:#555;
 }
-/* TOPBALK */
 .top{background:#1a1a1a;color:rgba(255,255,255,.75);font-size:.8rem;padding:.45rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .top a{color:var(--acc);text-decoration:none;font-weight:600}
 .top a:hover{color:#fff}
-/* NAV */
 nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid var(--rand);box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .navi{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:68px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .logo{font-size:1.5rem;font-weight:800;color:#1a1a1a;text-decoration:none;letter-spacing:-.5px}
@@ -38,60 +36,53 @@ nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid va
 .mmenu{display:none;flex-direction:column;background:#fff;border-top:1px solid var(--rand);padding:1rem 1.5rem 1.5rem}
 .mmenu.open{display:flex}
 .mmenu a{text-decoration:none;color:#1a1a1a;font-size:.95rem;font-weight:500;padding:.65rem 0;border-bottom:1px solid var(--rand);transition:.2s}
-.mmenu a:last-child{border:none;margin-top:.5rem;background:var(--g);color:#fff!important;text-align:center;border-radius:8px;padding:.75rem;font-weight:700}
-/* HERO */
+.mmenu a:last-child{border:none;margin-top:.5rem;background:#1a1a1a;color:var(--acc)!important;text-align:center;border-radius:8px;padding:.75rem;font-weight:700}
 .hero{background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);padding:5rem 1.5rem 0;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-100px;right:-100px;width:450px;height:450px;background:rgba(245,200,0,.05);border-radius:50%;pointer-events:none}
 .hcont{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 370px;gap:3rem;align-items:center}
 .htxt{color:#fff;padding-bottom:4rem}
-.htag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:50px;margin-bottom:1.5rem;color:#fff}
+.htag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:50px;margin-bottom:1.5rem;color:#fff}
 .htag::before{content:'';width:7px;height:7px;background:var(--acc);border-radius:50%;animation:p 2s infinite}
 @keyframes p{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.6)}}
 .htxt h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.08;margin-bottom:1.2rem}
 .htxt h1 em{font-style:italic;color:var(--acc);font-weight:700}
 .hint{font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.88);margin-bottom:2rem;max-width:520px}
 .hbtns{display:flex;gap:1rem;flex-wrap:wrap}
-/* Hero kaart */
-.hcard{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;bottom:-2rem}
+.hcard{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,.35);position:relative;bottom:-2rem}
 .hcard-t{font-size:1.25rem;font-weight:800;color:#1a1a1a;margin-bottom:.3rem}
 .hcard-s{font-size:.83rem;color:var(--sub);margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--rand)}
 .hcc{display:flex;flex-direction:column;gap:.5rem}
 .hcc a{display:flex;align-items:center;gap:.6rem;background:var(--lg);border-radius:10px;padding:.7rem 1rem;font-size:.85rem;font-weight:600;color:#1a1a1a;text-decoration:none;transition:.2s}
-.hcc a:hover{background:var(--gb);color:var(--g)}
+.hcc a:hover{background:var(--gb);color:#1a1a1a}
 .hcc .wa{background:#e8f5e9;color:#1b7a3e}
 .hcc .wa:hover{background:#c8e6c9}
-/* USP balk */
 .usp{background:rgba(0,0,0,.4);border-top:1px solid rgba(255,255,255,.08);margin-top:4rem;padding:1rem 1.5rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
 .usp span{font-size:.82rem;font-weight:600;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:.4rem}
-.usp span::before{content:'\2713';color:var(--acc);font-weight:800}
-/* KNOPPEN */
+.usp span::before{content:"✓";color:var(--acc);font-weight:800}
 .btn-a{background:var(--acc);color:#1a1a1a;padding:.85rem 1.8rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;border:none;cursor:pointer}
 .btn-a:hover{background:var(--acc2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(245,200,0,.4)}
 .btn-g{background:rgba(255,255,255,.1);color:#fff;padding:.85rem 1.8rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
 .btn-g:hover{background:rgba(255,255,255,.2)}
-.btn-groen{background:#1a1a1a;color:var(--acc);padding:.85rem 1.8rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
-.btn-groen:hover{background:#333;transform:translateY(-2px)}
 .btn-wit{background:#fff;color:#1a1a1a;padding:.85rem 2rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
 .btn-wit:hover{background:var(--gb);transform:translateY(-2px)}
 .btn-rw{background:transparent;color:#fff;padding:.85rem 2rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.45);display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
 .btn-rw:hover{border-color:#fff;background:rgba(255,255,255,.1)}
-/* SECTIES */
 .sec{padding:5.5rem 1.5rem}
 .sec-grijs{padding:5.5rem 1.5rem;background:var(--lg)}
-.sec-gd{padding:5.5rem 1.5rem;background:var(--gd)}
+.sec-gd{padding:5.5rem 1.5rem;background:#1a1a1a}
 .wrap{max-width:1200px;margin:0 auto}
 .kop{text-align:center;margin-bottom:3.5rem}
-.lbl{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:.6rem}
-.lbl-l{color:var(--gl)!important}
+.lbl{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a;margin-bottom:.6rem}
+.lbl-l{color:var(--acc)!important}
 h2.t{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:.9rem}
 h2.t-w{color:#fff}
 p.s{font-size:1rem;color:var(--sub);line-height:1.75;max-width:620px;margin:0 auto}
 p.s-w{color:rgba(255,255,255,.65)!important}
-/* DIENSTEN */
 .draster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .dk{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--rand);transition:.3s;display:flex;flex-direction:column}
-.dk:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.12)}
-.dimg{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.8rem}.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}
+.dk:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.12);border-color:var(--acc)}
+.dimg{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.8rem}
+.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}
 .d2{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}
 .d3{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}
 .d4{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}
@@ -105,22 +96,11 @@ p.s-w{color:rgba(255,255,255,.65)!important}
 .dbody{padding:1.4rem;flex:1;display:flex;flex-direction:column}
 .dbody h3{font-size:.98rem;font-weight:700;color:#1a1a1a;margin-bottom:.4rem}
 .dbody p{font-size:.84rem;color:var(--sub);line-height:1.65;flex:1}
-/* CONTACT */
-.cgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;max-width:700px;margin:0 auto}
-.ck{background:#fff;border:1px solid var(--rand);border-radius:16px;padding:1.8rem;text-align:center;transition:.3s}
-.ck:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.1);border-color:var(--gl)}
-.ck a{text-decoration:none;color:var(--tekst)}
-.cico{font-size:2.2rem;margin-bottom:.8rem;display:block}
-.ck h3{font-size:.95rem;font-weight:700;color:#1a1a1a;margin-bottom:.35rem}
-.ck p,.ck a{font-size:.88rem;color:var(--sub)}
-.ck a:hover{color:var(--g)}
-/* CTA */
 .cta{background:#1a1a1a;padding:4.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
 .cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:rgba(245,200,0,.04);border-radius:50%;pointer-events:none}
 .cta h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#fff;margin-bottom:.8rem;position:relative}
 .cta p{font-size:1rem;color:rgba(255,255,255,.78);margin-bottom:2.2rem;max-width:540px;margin-left:auto;margin-right:auto;position:relative;line-height:1.75}
 .ctabtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative}
-/* FOOTER */
 footer{background:#111;color:rgba(255,255,255,.55)}
 .fb{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding:4rem 1.5rem 3rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .flogo{font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:.2rem}
@@ -137,16 +117,14 @@ footer{background:#111;color:rgba(255,255,255,.55)}
 .fbot{max-width:1200px;margin:0 auto;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;flex-wrap:wrap;gap:1rem}
 .fbot a{color:rgba(255,255,255,.35);text-decoration:none;transition:.2s}
 .fbot a:hover{color:#fff}
-/* STICKY */
 .sbar{position:fixed;bottom:0;left:0;right:0;z-index:600;background:#111;display:grid;grid-template-columns:1fr 1.2fr 1fr;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 -4px 20px rgba(0,0,0,.3)}
 .sbtn{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.95rem;color:#fff;text-decoration:none;font-size:.82rem;font-weight:700;transition:.2s}
 .sbtn-m{background:var(--acc);color:#1a1a1a}
 .sbtn:hover{background:rgba(255,255,255,.08)}
 .sbtn-m:hover{background:var(--acc2);color:#1a1a1a}
-/* ANIMATIES */
-[data-aos]{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
-[data-aos].zb{opacity:1;transform:translateY(0)}
-/* RESPONSIVE */
+[data-aos]{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .65s ease}
+[data-aos].aos-init{opacity:0;transform:translateY(24px)}
+[data-aos].zb{opacity:1!important;transform:translateY(0)!important}
 @media(max-width:1050px){
   .nmenu,.nright{display:none}.ham{display:flex}
   .hcont{grid-template-columns:1fr}.hcard{display:none}.htxt{padding-bottom:3rem}
@@ -154,7 +132,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   .fb{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
-  .draster,.cgrid{grid-template-columns:1fr}.fb{grid-template-columns:1fr}
+  .draster{grid-template-columns:1fr}.fb{grid-template-columns:1fr}
   .htxt h1{font-size:2.2rem}.usp{gap:1rem}.top{display:none}
 }
 </style>
@@ -175,7 +153,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
     </ul>
     <div class="nright">
       <a href="https://wa.me/31659110607" class="nwa">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         WhatsApp
       </a>
       <a href="tel:+31659110607" class="ntel">&#9742; 06 5911 0607</a>
@@ -192,7 +170,6 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hcont">
     <div class="htxt">
@@ -209,7 +186,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <div class="hcard-s">Gratis afspraak op locatie. Vrijblijvend en snel geoffreerd.</div>
       <div class="hcc">
         <a href="tel:+31659110607">&#128222;&nbsp; +31 6 5911 0607</a>
-        <a href="/cdn-cgi/l/email-protection#abc1c4c3cac5ebd8c5cec7c7cececc85c5c7">&#9993;&nbsp; <span class="__cf_email__" data-cfemail="375d585f5659774459525b5b52525019595b">[email&#160;protected]</span></a>
+        <a href="mailto:johan@snelleeg.nl">&#9993;&nbsp; johan@snelleeg.nl</a>
         <a href="https://wa.me/31659110607" class="wa">&#128172;&nbsp; WhatsApp</a>
       </div>
     </div>
@@ -223,7 +200,6 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   </div>
 </section>
 
-<!-- DIENSTEN -->
 <section class="sec-grijs" id="diensten">
   <div class="wrap">
     <div class="kop">
@@ -280,14 +256,13 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="cta" id="contact">
   <div class="wrap">
     <h2>Heeft u vragen?</h2>
     <p>Neem dan contact met ons op via onderstaande mogelijkheden. Wij maken dan graag een afspraak op locatie om met u door te nemen wat u wil laten uitvoeren. Daarna offreren wij u graag gratis, geheel vrijblijvend en snel.</p>
     <div class="ctabtns">
       <a href="tel:+31659110607" class="btn-wit">&#128222; +31 6 5911 0607</a>
-      <a href="/cdn-cgi/l/email-protection#dbb1b4b3bab59ba8b5beb7b7bebebcf5b5b7" class="btn-wit">&#9993; <span class="__cf_email__" data-cfemail="1f7570777e715f6c717a73737a7a78317173">[email&#160;protected]</span></a>
+      <a href="mailto:johan@snelleeg.nl" class="btn-wit">&#9993; johan@snelleeg.nl</a>
       <a href="https://wa.me/31659110607" class="btn-rw">&#128172; WhatsApp</a>
     </div>
   </div>
@@ -301,7 +276,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <p class="fdesc">Woningontruiming met zorg en respect. Snel beschikbaar, duurzaam en persoonlijk. Gevestigd in Haarlem, actief in de regio.</p>
       <div class="fcl">
         <a href="tel:+31659110607">&#128222; +31 6 5911 0607</a>
-        <a href="/cdn-cgi/l/email-protection#284247404946685b464d44444d4d4f064644">&#9993; <span class="__cf_email__" data-cfemail="375d585f5659774459525b5b52525019595b">[email&#160;protected]</span></a>
+        <a href="mailto:johan@snelleeg.nl">&#9993; johan@snelleeg.nl</a>
         <a href="https://wa.me/31659110607">&#128172; WhatsApp</a>
         <span>&#128205; Rollandstraat 12, 2013 SP Haarlem</span>
         <span>KvK Amsterdam 98927744</span>
@@ -324,7 +299,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
         <li><a href="#contact">Gratis offerte</a></li>
         <li><a href="tel:+31659110607">Direct bellen</a></li>
         <li><a href="https://wa.me/31659110607">WhatsApp</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#f3999c9b929db3809d969f9f969694dd9d9f">E-mail</a></li>
+        <li><a href="mailto:johan@snelleeg.nl">E-mail</a></li>
       </ul>
     </div>
   </div>
@@ -340,4 +315,19 @@ footer{background:#111;color:rgba(255,255,255,.55)}
   <a href="tel:+31659110607" class="sbtn">&#128222; Bellen</a>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-stat
+<script>
+function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('zb')});
+},{threshold:.08});
+document.querySelectorAll('[data-aos]').forEach(el=>{
+  el.classList.add('aos-init');
+  obs.observe(el);
+});
+window.addEventListener('scroll',()=>{
+  const n=document.querySelector('nav');
+  if(n)n.style.boxShadow=window.scrollY>30?'0 4px 20px rgba(0,0,0,.12)':'0 2px 10px rgba(0,0,0,.06)';
+});
+</script>
+</body>
+</html>
