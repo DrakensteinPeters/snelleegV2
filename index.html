@@ -7,134 +7,136 @@
 <meta name="description" content="Woningontruiming met gevoel en zorg. Haarlem en omgeving. Gratis offerte op locatie.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:#fff;color:#1a1a1a;overflow-x:hidden;padding-bottom:64px}
-:root{
-  --g:#f5c800;--gd:#1a1a1a;--gl:#ffe566;--gb:#fff9d6;
-  --acc:#f5c800;--acc2:#c9a200;--lg:#f5f5f5;--rand:#e0e0e0;--sub:#555;
-}
-.top{background:#1a1a1a;color:rgba(255,255,255,.75);font-size:.8rem;padding:.45rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
-.top a{color:var(--acc);text-decoration:none;font-weight:600}
-.top a:hover{color:#fff}
-nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid var(--rand);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+nav{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid #e0e0e0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .navi{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:68px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .logo{font-size:1.5rem;font-weight:800;color:#1a1a1a;text-decoration:none;letter-spacing:-.5px}
-.logo span{color:var(--acc)}
 .nmenu{display:flex;list-style:none;gap:.15rem}
 .nmenu a{text-decoration:none;color:#1a1a1a;font-size:.875rem;font-weight:500;padding:.4rem .7rem;border-radius:6px;transition:.2s}
-.nmenu a:hover{color:#1a1a1a;background:var(--gb)}
 .nright{display:flex;align-items:center;gap:.8rem}
 .ntel{font-weight:700;font-size:.875rem;color:#1a1a1a;text-decoration:none}
-.ntel:hover{color:#555}
 .nwa{display:flex;align-items:center;gap:.4rem;background:#25d366;color:#fff;padding:.45rem .85rem;border-radius:50px;font-weight:700;font-size:.82rem;text-decoration:none;transition:.2s;white-space:nowrap}
 .nwa:hover{background:#1da851;transform:translateY(-1px)}
-.ncta{background:#1a1a1a;color:var(--acc);padding:.55rem 1.2rem;border-radius:50px;font-weight:700;font-size:.85rem;text-decoration:none;transition:.2s;white-space:nowrap}
-.ncta:hover{background:#333;transform:translateY(-1px)}
 .ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .ham span{display:block;width:22px;height:2px;background:#1a1a1a;border-radius:2px}
-.mmenu{display:none;flex-direction:column;background:#fff;border-top:1px solid var(--rand);padding:1rem 1.5rem 1.5rem}
+.mmenu{display:none;flex-direction:column;background:#fff;border-top:1px solid #e0e0e0;padding:1rem 1.5rem 1.5rem}
 .mmenu.open{display:flex}
-.mmenu a{text-decoration:none;color:#1a1a1a;font-size:.95rem;font-weight:500;padding:.65rem 0;border-bottom:1px solid var(--rand);transition:.2s}
-.mmenu a:last-child{border:none;margin-top:.5rem;background:#1a1a1a;color:var(--acc)!important;text-align:center;border-radius:8px;padding:.75rem;font-weight:700}
-.hero{background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);padding:5rem 1.5rem 0;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:450px;height:450px;background:rgba(245,200,0,.05);border-radius:50%;pointer-events:none}
+.mmenu a{text-decoration:none;color:#1a1a1a;font-size:.95rem;font-weight:500;padding:.65rem 0;border-bottom:1px solid #e0e0e0;transition:.2s}
+.hero{padding:5rem 1.5rem 0;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:450px;height:450px;border-radius:50%;pointer-events:none}
 .hcont{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 370px;gap:3rem;align-items:center}
-.htxt{color:#fff;padding-bottom:4rem}
-.htag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:50px;margin-bottom:1.5rem;color:#fff}
-.htag::before{content:'';width:7px;height:7px;background:var(--acc);border-radius:50%;animation:p 2s infinite}
+.htxt{padding-bottom:4rem}
+.htag{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:50px;margin-bottom:1.5rem}
+.htag::before{content:'';width:7px;height:7px;border-radius:50%;animation:p 2s infinite}
 @keyframes p{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.6)}}
 .htxt h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.08;margin-bottom:1.2rem}
-.htxt h1 em{font-style:italic;color:var(--acc);font-weight:700}
-.hint{font-size:1.02rem;line-height:1.8;color:rgba(255,255,255,.88);margin-bottom:2rem;max-width:520px}
+.htxt h1 em{font-style:italic;font-weight:700}
+.hint{font-size:1.02rem;line-height:1.8;margin-bottom:2rem;max-width:520px}
 .hbtns{display:flex;gap:1rem;flex-wrap:wrap}
-.hcard{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,.35);position:relative;bottom:-2rem}
+.hcard{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 20px 60px rgba(0,0,0,.25);position:relative;bottom:-2rem}
 .hcard-t{font-size:1.25rem;font-weight:800;color:#1a1a1a;margin-bottom:.3rem}
-.hcard-s{font-size:.83rem;color:var(--sub);margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid var(--rand)}
+.hcard-s{font-size:.83rem;color:#555;margin-bottom:1.3rem;padding-bottom:1.3rem;border-bottom:1px solid #e0e0e0}
 .hcc{display:flex;flex-direction:column;gap:.5rem}
-.hcc a{display:flex;align-items:center;gap:.6rem;background:var(--lg);border-radius:10px;padding:.7rem 1rem;font-size:.85rem;font-weight:600;color:#1a1a1a;text-decoration:none;transition:.2s}
-.hcc a:hover{background:var(--gb);color:#1a1a1a}
+.hcc a{display:flex;align-items:center;gap:.6rem;background:#f5f5f5;border-radius:10px;padding:.7rem 1rem;font-size:.85rem;font-weight:600;color:#1a1a1a;text-decoration:none;transition:.2s}
 .hcc .wa{background:#e8f5e9;color:#1b7a3e}
 .hcc .wa:hover{background:#c8e6c9}
-.usp{background:rgba(0,0,0,.4);border-top:1px solid rgba(255,255,255,.08);margin-top:4rem;padding:1rem 1.5rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
-.usp span{font-size:.82rem;font-weight:600;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:.4rem}
-.usp span::before{content:"✓";color:var(--acc);font-weight:800}
-.btn-a{background:var(--acc);color:#1a1a1a;padding:.85rem 1.8rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;border:none;cursor:pointer}
-.btn-a:hover{background:var(--acc2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(245,200,0,.4)}
-.btn-g{background:rgba(255,255,255,.1);color:#fff;padding:.85rem 1.8rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
-.btn-g:hover{background:rgba(255,255,255,.2)}
-.btn-wit{background:#fff;color:#1a1a1a;padding:.85rem 2rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
-.btn-wit:hover{background:var(--gb);transform:translateY(-2px)}
-.btn-rw{background:transparent;color:#fff;padding:.85rem 2rem;border-radius:50px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid rgba(255,255,255,.45);display:inline-flex;align-items:center;gap:.4rem;transition:.2s}
-.btn-rw:hover{border-color:#fff;background:rgba(255,255,255,.1)}
-.sec{padding:5.5rem 1.5rem}
-.sec-grijs{padding:5.5rem 1.5rem;background:var(--lg)}
-.sec-gd{padding:5.5rem 1.5rem;background:#1a1a1a}
+.usp{border-top:1px solid rgba(0,0,0,.08);margin-top:4rem;padding:1rem 1.5rem;display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.usp span{font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:.4rem}
+.usp span::before{content:"✓";font-weight:800}
+.btn-a,.btn-b,.btn-wit,.btn-rw{padding:.85rem 1.8rem;border-radius:50px;font-weight:700;font-size:.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:.2s;border:none;cursor:pointer}
+.btn-a:hover,.btn-b:hover{transform:translateY(-2px)}
+.btn-wit:hover{transform:translateY(-2px)}
+.sec-grijs{padding:5.5rem 1.5rem;background:#f5f5f5}
 .wrap{max-width:1200px;margin:0 auto}
 .kop{text-align:center;margin-bottom:3.5rem}
-.lbl{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a;margin-bottom:.6rem}
-.lbl-l{color:var(--acc)!important}
+.lbl{display:inline-block;font-size:.73rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:.6rem}
 h2.t{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#1a1a1a;line-height:1.2;margin-bottom:.9rem}
-h2.t-w{color:#fff}
-p.s{font-size:1rem;color:var(--sub);line-height:1.75;max-width:620px;margin:0 auto}
-p.s-w{color:rgba(255,255,255,.65)!important}
+p.s{font-size:1rem;color:#555;line-height:1.75;max-width:620px;margin:0 auto}
 .draster{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.dk{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--rand);transition:.3s;display:flex;flex-direction:column}
-.dk:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.12);border-color:var(--acc)}
+.dk{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #e0e0e0;transition:.3s;display:flex;flex-direction:column}
+.dk:hover{transform:translateY(-5px);box-shadow:0 20px 48px rgba(0,0,0,.12)}
 .dimg{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.8rem}
-.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}
-.d2{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}
-.d3{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}
-.d4{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}
-.d5{background:linear-gradient(135deg,#fffde7,#fff9c4)}
-.d6{background:linear-gradient(135deg,#fce4ec,#f8bbd0)}
-.d7{background:linear-gradient(135deg,#f3e5f5,#e1bee7)}
-.d8{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}
-.d9{background:linear-gradient(135deg,#fbe9e7,#ffccbc)}
-.d10{background:linear-gradient(135deg,#e3f2fd,#bbdefb)}
-.d11{background:linear-gradient(135deg,#f1f8e9,#dcedc8)}
+.d1{background:linear-gradient(135deg,#d8f3dc,#b7e4c7)}.d2{background:linear-gradient(135deg,#e8eaf6,#c5cae9)}.d3{background:linear-gradient(135deg,#fff3e0,#ffe0b2)}.d4{background:linear-gradient(135deg,#e0f7fa,#b2ebf2)}.d5{background:linear-gradient(135deg,#fffde7,#fff9c4)}.d6{background:linear-gradient(135deg,#fce4ec,#f8bbd0)}.d7{background:linear-gradient(135deg,#f3e5f5,#e1bee7)}.d8{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}.d9{background:linear-gradient(135deg,#fbe9e7,#ffccbc)}.d10{background:linear-gradient(135deg,#e3f2fd,#bbdefb)}.d11{background:linear-gradient(135deg,#f1f8e9,#dcedc8)}
 .dbody{padding:1.4rem;flex:1;display:flex;flex-direction:column}
 .dbody h3{font-size:.98rem;font-weight:700;color:#1a1a1a;margin-bottom:.4rem}
-.dbody p{font-size:.84rem;color:var(--sub);line-height:1.65;flex:1}
-.cta{background:#1a1a1a;padding:4.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
-.cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:rgba(245,200,0,.04);border-radius:50%;pointer-events:none}
-.cta h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:#fff;margin-bottom:.8rem;position:relative}
-.cta p{font-size:1rem;color:rgba(255,255,255,.78);margin-bottom:2.2rem;max-width:540px;margin-left:auto;margin-right:auto;position:relative;line-height:1.75}
+.dbody p{font-size:.84rem;color:#555;line-height:1.65;flex:1}
+.cta{padding:4.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;border-radius:50%;pointer-events:none}
+.cta h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:.8rem;position:relative}
+.cta p{font-size:1rem;margin-bottom:2.2rem;max-width:540px;margin-left:auto;margin-right:auto;position:relative;line-height:1.75}
 .ctabtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;position:relative}
 footer{background:#111;color:rgba(255,255,255,.55)}
 .fb{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding:4rem 1.5rem 3rem;border-bottom:1px solid rgba(255,255,255,.08)}
 .flogo{font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:.2rem}
-.flogo span{color:var(--acc)}
-.fslogan{font-style:italic;color:var(--acc);font-size:.85rem;margin-bottom:1rem}
 .fdesc{font-size:.82rem;line-height:1.7;margin-bottom:1.4rem}
 .fcl{display:flex;flex-direction:column;gap:.45rem}
 .fcl a,.fcl span{font-size:.82rem;color:rgba(255,255,255,.6);text-decoration:none;display:flex;align-items:center;gap:.4rem;transition:.2s}
-.fcl a:hover{color:var(--acc)}
 .fkol h4{color:#fff;font-weight:700;font-size:.85rem;margin-bottom:1.1rem}
 .fkol ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
 .fkol ul a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem;transition:.2s}
-.fkol ul a:hover{color:var(--acc)}
 .fbot{max-width:1200px;margin:0 auto;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.78rem;flex-wrap:wrap;gap:1rem}
 .fbot a{color:rgba(255,255,255,.35);text-decoration:none;transition:.2s}
 .fbot a:hover{color:#fff}
 .sbar{position:fixed;bottom:0;left:0;right:0;z-index:600;background:#111;display:grid;grid-template-columns:1fr 1.2fr 1fr;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 -4px 20px rgba(0,0,0,.3)}
 .sbtn{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.95rem;color:#fff;text-decoration:none;font-size:.82rem;font-weight:700;transition:.2s}
-.sbtn-m{background:var(--acc);color:#1a1a1a}
 .sbtn:hover{background:rgba(255,255,255,.08)}
-.sbtn-m:hover{background:var(--acc2);color:#1a1a1a}
 [data-aos]{opacity:1;transform:translateY(0);transition:opacity .65s ease,transform .65s ease}
 [data-aos].aos-init{opacity:0;transform:translateY(24px)}
 [data-aos].zb{opacity:1!important;transform:translateY(0)!important}
 @media(max-width:1050px){
   .nmenu,.nright{display:none}.ham{display:flex}
   .hcont{grid-template-columns:1fr}.hcard{display:none}.htxt{padding-bottom:3rem}
-  .draster{grid-template-columns:repeat(2,1fr)}
-  .fb{grid-template-columns:1fr 1fr}
+  .draster{grid-template-columns:repeat(2,1fr)}.fb{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
   .draster{grid-template-columns:1fr}.fb{grid-template-columns:1fr}
   .htxt h1{font-size:2.2rem}.usp{gap:1rem}.top{display:none}
 }
+
+.top{background:#1a1a1a;color:rgba(255,255,255,.75);font-size:.8rem;padding:.45rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.top a{color:#f5c800;text-decoration:none;font-weight:600}
+.top a:hover{color:#fff}
+.logo span{color:#f5c800}
+.nmenu a:hover{background:#fff9d6}
+.ntel:hover{color:#555}
+.ncta{background:#1a1a1a;color:#f5c800;padding:.55rem 1.2rem;border-radius:50px;font-weight:700;font-size:.85rem;text-decoration:none;transition:.2s;white-space:nowrap}
+.ncta:hover{background:#333;transform:translateY(-1px)}
+.mmenu a:last-child{background:#1a1a1a;color:#f5c800!important;text-align:center;border-radius:8px;padding:.75rem;font-weight:700;border:none}
+.hero{background:linear-gradient(135deg,#111 0%,#1a1a1a 100%)}
+.hero::before{background:rgba(245,200,0,.05)}
+.htxt{color:#fff}
+.htag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff}
+.htag::before{background:#f5c800}
+.htxt h1 em{color:#f5c800}
+.hint{color:rgba(255,255,255,.88)}
+.btn-a{background:#f5c800;color:#1a1a1a}
+.btn-a:hover{background:#c9a200;box-shadow:0 8px 20px rgba(245,200,0,.4)}
+.btn-b{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-b:hover{background:rgba(255,255,255,.2)}
+.hcc a:hover{background:#fff9d6;color:#1a1a1a}
+.usp{background:rgba(0,0,0,.4);border-top-color:rgba(255,255,255,.08)}
+.usp span{color:rgba(255,255,255,.85)}
+.usp span::before{color:#f5c800}
+.lbl{color:#1a1a1a}
+.dk:hover{border-color:#f5c800}
+.cta{background:#1a1a1a}
+.cta::before{background:rgba(245,200,0,.04)}
+.cta h2{color:#fff}
+.cta p{color:rgba(255,255,255,.78)}
+.btn-wit{background:#f5c800;color:#1a1a1a}
+.btn-wit:hover{background:#c9a200}
+.btn-rw{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-rw:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.flogo span{color:#f5c800}
+.fslogan{font-style:italic;color:#f5c800;font-size:.85rem;margin-bottom:1rem}
+.fcl a:hover{color:#f5c800}
+.fkol ul a:hover{color:#f5c800}
+.sbtn-m{background:#f5c800;color:#1a1a1a}
+.sbtn-m:hover{background:#c9a200;color:#1a1a1a}
+
 </style>
 </head>
 <body>
@@ -178,7 +180,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <p class="hint">Uw woning moet ontruimd worden. Dat is vaak een emotioneel en uitdagend proces. Zo kan het een seniorverhuizing betreffen, maar ook een overlijden. Snelleeg.nl behandelt uw ontruiming met zorg en respect. Wij begrijpen uw situatie en handelen daar ook naar door het snel en zorgvuldig af te handelen. Uw wensen worden overal in meegenomen met oog voor detail en duurzaamheid.</p>
       <div class="hbtns">
         <a href="#contact" class="btn-a">Gratis offerte aanvragen</a>
-        <a href="tel:+31659110607" class="btn-g">&#9742; Direct bellen</a>
+        <a href="tel:+31659110607" class="btn-b">&#9742; Direct bellen</a>
       </div>
     </div>
     <div class="hcard">
@@ -186,7 +188,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <div class="hcard-s">Gratis afspraak op locatie. Vrijblijvend en snel geoffreerd.</div>
       <div class="hcc">
         <a href="tel:+31659110607">&#128222;&nbsp; +31 6 5911 0607</a>
-        <a href="mailto:johan@snelleeg.nl">&#9993;&nbsp; johan@snelleeg.nl</a>
+        <a href="mailto:johan&#64;snelleeg.nl">&#9993;&nbsp; johan&#64;snelleeg.nl</a>
         <a href="https://wa.me/31659110607" class="wa">&#128172;&nbsp; WhatsApp</a>
       </div>
     </div>
@@ -208,50 +210,17 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <p class="s">Laat ons uw zorgen uit handen nemen, zodat u zich op belangrijker zaken kunt richten.</p>
     </div>
     <div class="draster">
-      <div class="dk" data-aos>
-        <div class="dimg d1">&#127968;</div>
-        <div class="dbody"><h3>Ontzorging bij ontruiming</h3><p>Wij staan u bij bij de volledige ontruiming van een woning. U hoeft nergens naar om te kijken.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d2">&#128230;</div>
-        <div class="dbody"><h3>Afvoeren &amp; vervoeren</h3><p>U bepaalt welke zaken waarheen worden vervoerd of afgevoerd. Altijd met zorg en gevoel voor uw situatie.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d3">&#9851;</div>
-        <div class="dbody"><h3>Duurzaam werken</h3><p>Waar mogelijk worden zaken naar de kringloopwinkel gebracht, dan wel gerecycled.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d4">&#9889;</div>
-        <div class="dbody"><h3>Snel beschikbaar</h3><p>Spoedklus of deadline? Geen probleem. We vinden altijd een oplossing &mdash; ook binnen 24 uur.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d5">&#128176;</div>
-        <div class="dbody"><h3>Verkoop regelen</h3><p>Wilt u iets uit de woning verkopen, of achterlaten voor verkoop? Wij regelen het voor u.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d6">&#128722;</div>
-        <div class="dbody"><h3>Opslag vinden</h3><p>Indien nodig vinden wij passende opslag voor uw spullen.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d7">&#129529;</div>
-        <div class="dbody"><h3>Bezemschoon opleveren</h3><p>De woning wordt bezemschoon en verkoopklaar opgeleverd, indien gewenst. Ook zwaar vervuilde woningen.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d8">&#128295;</div>
-        <div class="dbody"><h3>Kleine reparaties</h3><p>Wij voeren ook kleine reparaties uit, zodat u geen andere partijen hoeft in te schakelen.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d9">&#128218;</div>
-        <div class="dbody"><h3>Vloerbedekking verwijderen</h3><p>Vloerbedekking verwijderen kan een zware klus zijn. Dat doen we graag voor u.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d10">&#128200;</div>
-        <div class="dbody"><h3>Flexibele tarieven</h3><p>Wij werken op een all-in prijs of op uurbasis. U bepaalt wat het beste bij uw situatie past.</p></div>
-      </div>
-      <div class="dk" data-aos>
-        <div class="dimg d11">&#127962;</div>
-        <div class="dbody"><h3>Woningen &amp; bedrijfspanden</h3><p>Wij verzorgen ontruimingen van woningen en bedrijfspanden. Ook met hoge spoed, zelfs binnen 24 uur.</p></div>
-      </div>
+      <div class="dk" data-aos><div class="dimg d1">&#127968;</div><div class="dbody"><h3>Ontzorging bij ontruiming</h3><p>Wij staan u bij bij de volledige ontruiming van een woning. U hoeft nergens naar om te kijken.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d2">&#128230;</div><div class="dbody"><h3>Afvoeren &amp; vervoeren</h3><p>U bepaalt welke zaken waarheen worden vervoerd of afgevoerd. Altijd met zorg en gevoel voor uw situatie.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d3">&#9851;</div><div class="dbody"><h3>Duurzaam werken</h3><p>Waar mogelijk worden zaken naar de kringloopwinkel gebracht, dan wel gerecycled.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d4">&#9889;</div><div class="dbody"><h3>Snel beschikbaar</h3><p>Spoedklus of deadline? Geen probleem. We vinden altijd een oplossing &mdash; ook binnen 24 uur.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d5">&#128176;</div><div class="dbody"><h3>Verkoop regelen</h3><p>Wilt u iets uit de woning verkopen, of achterlaten voor verkoop? Wij regelen het voor u.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d6">&#128722;</div><div class="dbody"><h3>Opslag vinden</h3><p>Indien nodig vinden wij passende opslag voor uw spullen.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d7">&#129529;</div><div class="dbody"><h3>Bezemschoon opleveren</h3><p>De woning wordt bezemschoon en verkoopklaar opgeleverd, indien gewenst. Ook zwaar vervuilde woningen.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d8">&#128295;</div><div class="dbody"><h3>Kleine reparaties</h3><p>Wij voeren ook kleine reparaties uit, zodat u geen andere partijen hoeft in te schakelen.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d9">&#128218;</div><div class="dbody"><h3>Vloerbedekking verwijderen</h3><p>Vloerbedekking verwijderen kan een zware klus zijn. Dat doen we graag voor u.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d10">&#128200;</div><div class="dbody"><h3>Flexibele tarieven</h3><p>Wij werken op een all-in prijs of op uurbasis. U bepaalt wat het beste bij uw situatie past.</p></div></div>
+      <div class="dk" data-aos><div class="dimg d11">&#127962;</div><div class="dbody"><h3>Woningen &amp; bedrijfspanden</h3><p>Wij verzorgen ontruimingen van woningen en bedrijfspanden. Ook met hoge spoed, zelfs binnen 24 uur.</p></div></div>
     </div>
   </div>
 </section>
@@ -262,7 +231,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
     <p>Neem dan contact met ons op via onderstaande mogelijkheden. Wij maken dan graag een afspraak op locatie om met u door te nemen wat u wil laten uitvoeren. Daarna offreren wij u graag gratis, geheel vrijblijvend en snel.</p>
     <div class="ctabtns">
       <a href="tel:+31659110607" class="btn-wit">&#128222; +31 6 5911 0607</a>
-      <a href="mailto:johan@snelleeg.nl" class="btn-wit">&#9993; johan@snelleeg.nl</a>
+      <a href="mailto:johan&#64;snelleeg.nl" class="btn-wit">&#9993; johan&#64;snelleeg.nl</a>
       <a href="https://wa.me/31659110607" class="btn-rw">&#128172; WhatsApp</a>
     </div>
   </div>
@@ -276,7 +245,7 @@ footer{background:#111;color:rgba(255,255,255,.55)}
       <p class="fdesc">Woningontruiming met zorg en respect. Snel beschikbaar, duurzaam en persoonlijk. Gevestigd in Haarlem, actief in de regio.</p>
       <div class="fcl">
         <a href="tel:+31659110607">&#128222; +31 6 5911 0607</a>
-        <a href="mailto:johan@snelleeg.nl">&#9993; johan@snelleeg.nl</a>
+        <a href="mailto:johan&#64;snelleeg.nl">&#9993; johan&#64;snelleeg.nl</a>
         <a href="https://wa.me/31659110607">&#128172; WhatsApp</a>
         <span>&#128205; Rollandstraat 12, 2013 SP Haarlem</span>
         <span>KvK Amsterdam 98927744</span>
@@ -299,12 +268,12 @@ footer{background:#111;color:rgba(255,255,255,.55)}
         <li><a href="#contact">Gratis offerte</a></li>
         <li><a href="tel:+31659110607">Direct bellen</a></li>
         <li><a href="https://wa.me/31659110607">WhatsApp</a></li>
-        <li><a href="mailto:johan@snelleeg.nl">E-mail</a></li>
+        <li><a href="mailto:johan&#64;snelleeg.nl">E-mail</a></li>
       </ul>
     </div>
   </div>
   <div class="fbot">
-    <span>&copy; 2025 Snelleeg.nl &mdash; Alle rechten voorbehouden</span>
+    <span>&#169; 2025 Snelleeg.nl &mdash; Alle rechten voorbehouden</span>
     <span><a href="#">Privacybeleid</a> &middot; <a href="#">Algemene voorwaarden</a></span>
   </div>
 </footer>
@@ -316,18 +285,18 @@ footer{background:#111;color:rgba(255,255,255,.55)}
 </div>
 
 <script>
-function toggleMenu(){document.getElementById('mm').classList.toggle('open')}
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('zb')});
-},{threshold:.08});
-document.querySelectorAll('[data-aos]').forEach(el=>{
+function toggleMenu(){{document.getElementById('mm').classList.toggle('open')}}
+const obs=new IntersectionObserver(entries=>{{
+  entries.forEach(e=>{{if(e.isIntersecting)e.target.classList.add('zb')}});
+}},{{threshold:.08}});
+document.querySelectorAll('[data-aos]').forEach(el=>{{
   el.classList.add('aos-init');
   obs.observe(el);
-});
-window.addEventListener('scroll',()=>{
+}});
+window.addEventListener('scroll',()=>{{
   const n=document.querySelector('nav');
   if(n)n.style.boxShadow=window.scrollY>30?'0 4px 20px rgba(0,0,0,.12)':'0 2px 10px rgba(0,0,0,.06)';
-});
+}});
 </script>
 </body>
 </html>
